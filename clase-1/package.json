@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "clase-1",
+  "version": "1.0.0",
+  "description": "primera clase del cuatrimestre",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drmaquino/ORT-2022-C1-TP2C.git"
+  },
+  "author": "drmaquino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drmaquino/ORT-2022-C1-TP2C/issues"
+  },
+  "homepage": "https://github.com/drmaquino/ORT-2022-C1-TP2C#readme"
+}
