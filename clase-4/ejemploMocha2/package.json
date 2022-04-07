@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "clase-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "nodemon --exec mocha",
+    "start": "node src/main.js",
+    "startJsonServer": "json-server --watch DB/db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "json-server": "^0.17.0",
+    "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

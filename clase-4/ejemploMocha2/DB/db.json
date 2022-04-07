@@ -1,0 +1,13 @@
+{
+    "instituto": {
+        "nombre": "Instituto de tecnología ORT"
+    },
+    "carreras": [
+        {
+            "nombre": "Analista de sistemas"
+        },
+        {
+            "nombre": "Biotecnología"
+        }
+    ]
+}
