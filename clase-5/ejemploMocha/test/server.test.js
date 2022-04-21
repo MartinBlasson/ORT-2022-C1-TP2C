@@ -24,17 +24,40 @@ describe('servidor de pruebas', () => {
             })
         })
 
-        describe('al mandarle una carrera carrera', () => {
+        describe('al mandarle una carrera', () => {
             it('la agrega a las demas existentes', async () => {
                 const carrerasAntes = obtenerCarreras()
                 const carrera = {
-                    "nombre": "Ciencia de datos"
+                    nombre: "Ciencia de datos"
                 }
-                const { status } = await axios.post('http://localhost:3000/carreras', carrera)
+                const { data: carreraAgregada, status } = await axios.post('http://localhost:3000/carreras', carrera)
                 assert.strictEqual(status, 201)
-                // const carrerasDespues = obtenerCarreras()
-                // assert.strictEqual(carrerasDespues.length, carrerasAntes.length + 1)
-                // assert.ok(carrerasDespues.)
+
+                const carrerasDespues = obtenerCarreras()
+                assert.strictEqual(carrerasDespues.length, carrerasAntes.length + 1)
+
+                const carreraAgregadaEsperada = { ...carrera, id: carreraAgregada.id }
+                assert.deepStrictEqual(carrerasDespues, carrerasAntes.concat(carreraAgregadaEsperada))
+            })
+        })
+
+        describe('al mandarle una carrera mal formateada', () => {
+            it('no agrega nada y devuelve un error', async () => {
+                const carrerasAntes = obtenerCarreras()
+                const carrera = {
+                    titulo: "Ciencia de datos"
+                }
+
+                await assert.rejects(
+                    axios.post('http://localhost:3000/carreras', carrera),
+                    error => {
+                        assert.strictEqual(error.response.status, 400)
+                        return true
+                    }
+                )
+
+                const carrerasDespues = obtenerCarreras()
+                assert.deepStrictEqual(carrerasDespues, carrerasAntes)
             })
         })
     })

@@ -3,15 +3,21 @@ import { obtenerCarreras, agregarCarrera } from './carreras.js'
 
 const app = express()
 
+app.use(express.json())
+
 app.get('/carreras', (req, res) => {
     const carreras = obtenerCarreras()
     res.json(carreras)
 })
 
 app.post('/carreras', (req, res) => {
-    const carrera = {} // ?
-    agregarCarrera(carrera)
-    res.status(201).json(carrera)
+    try {
+        const carrera = req.body
+        const carreraAgregada = agregarCarrera(carrera)
+        res.status(201).json(carreraAgregada)
+    } catch (error) {
+        res.status(400).json({ error: error.message })
+    }
 })
 
 let server
