@@ -7,6 +7,7 @@ En los siguientes links podran ver las grabaciones de las clases en vivo:
 - [clase 4 - npm, nodemon, mocha, axios, express get](https://drive.google.com/drive/folders/1VPH2gOmkgcs7jMuKQbGxt6AzGY5ogHsB)
 - [clase 5 - express post, assert.rejects ](https://drive.google.com/drive/folders/1Xt1qLLxU74CW65P1KQfygraj4x01Gt-4)
 - [clase 6 - express put, delete ](https://drive.google.com/drive/folders/1s2WFlLWX0lZX8WFRH4DiCg4tWDW1Zez5)
+- [clase 7 - repaso TDD, express router](https://drive.google.com/drive/folders/1j2DqNCjwMeJSLRDDAusXXkX5uGsq6lyz)
 
 ## Material adicional
 #### Git
