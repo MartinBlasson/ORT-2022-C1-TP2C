@@ -10,6 +10,7 @@ En los siguientes links podran ver las grabaciones de las clases en vivo:
 - [clase 7 - repaso TDD, express router](https://drive.google.com/drive/folders/1j2DqNCjwMeJSLRDDAusXXkX5uGsq6lyz)
 - [clase 8 - thunder client, dao, factory](https://drive.google.com/drive/folders/11miDUa_B9hCwQ75ZDRcS18HU8qpnILgy)
 - [clase 9 - middlewares, express.static, multer, jwt](https://drive.google.com/drive/folders/1wvAQS70P0lbLMsoRdDczR0sYqBjmzxRI)
+- [clase 10 - mongodb: instalacion, driver para nodejs](https://drive.google.com/drive/folders/1rAPPd82k8h7jSxG2mJjj2CndK90SLUEP)
 
 ## Material adicional
 #### Git

@@ -1,0 +1,47 @@
+Persona {
+    nombre
+    edad
+    direccion {
+        calle
+        numero
+        cp
+    }
+}
+
+=======
+
+# SQL
+
+Persona {
+    id_persona: 1 (PK)
+    nombre: marian
+    edad: 36
+    direccion: 1 (FK)
+}
+
+direccion {
+    id_direccion: 1 (PK)
+    calle: rivadavia
+    numero: 1234
+    cp: 666
+}
+
+personas.direccion -> direccion.id_direccion
+
+SELECT nombre, cp FROM personas INNER JOIN direcciones ON personas.direccion = direccion.id_direccion
+SELECT DISTINCT cp FROM direcciones
+
+=======
+
+# noSQL
+
+Persona {
+    id
+    nombre
+    edad
+    direccion {
+        calle
+        numero
+        cp
+    }
+}
